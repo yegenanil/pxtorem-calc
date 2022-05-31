@@ -40,14 +40,18 @@ function App() {
         <h1>PX ↔︎ REM conversion tables</h1>
         <form onSubmit={(e) => e.preventDefault()} className="form-container">
           <div className='px-container'>
-            <div>
-              <h1>Pixels</h1>
+            <h1>Pixels</h1>
+            <div className='px-alt-container'>
               <input type="text" ref={pxInput} defaultValue={''} onChange={(e) => handlePxChange(e.target.value)} />
+              <p className='p-text'>px</p>
             </div>
           </div>
           <div className='rem-container'>
             <h1>REM</h1>
-            <input type="text" ref={remInput} defaultValue={''} onChange={(e) => handleRemChange(e.target.value)} />
+            <div className='rem-alt-container'>
+              <input type="text" ref={remInput} defaultValue={''} onChange={(e) => handleRemChange(e.target.value)} />
+              <p className='rem-text'>rem</p>
+            </div>
           </div>
         </form>
       </div>

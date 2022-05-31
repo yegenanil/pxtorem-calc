@@ -12,6 +12,9 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 code {
@@ -20,6 +23,7 @@ code {
 
 h1 {
   font-weight: 400;
+  text-align: center;
 }
 
 input {
@@ -28,6 +32,9 @@ input {
   padding: 10px;
   border-radius: 20px;
   font-size: 25px;
+  border: none;
+  text-align: center;
+  outline: none;
 }
 
 
@@ -39,20 +46,61 @@ input {
   margin-top: -230px;
 }
 
+@media screen and (max-width: 480px) {
+  .form-container {
+    flex-direction: column;
+  }
+}
+
 .form-container {
   display: flex;
 }
 
 .px-container {
+  margin-right: 20px;
+  position: relative;
+}
+
+.px-alt-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-right: 20px;
+  margin: 0;
+  margin-top: 4px;
+  border: 1px solid gainsboro;
+  transition: all 150ms ease-in-out;
+}
+
+.p-text {
+  position: absolute;
+  vertical-align: middle;
+  top: 83px;
+  right: 1rem;
+  bottom: 0;
+  opacity: 0.5;
 }
 
 .rem-container {
+  margin-right: 20px;
+  position: relative;
+}
+
+.rem-alt-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-right: 20px;
+  margin: 0;
+  margin-top: 4px;
+  border: 1px solid gainsboro;
+}
+
+.rem-text {
+  position: absolute;
+  vertical-align: middle;
+  top: 83px;
+  right: 1rem;
+  bottom: 0;
+  opacity: 0.5;
 }
