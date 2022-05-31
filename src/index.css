@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,8 +15,28 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  margin-top: -230px;
 }
 
 .form-container {
