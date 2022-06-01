@@ -37,13 +37,15 @@ input {
   outline: none;
 }
 
+.container {
+  display: flex;
+}
 
 .main-container {
   display: flex;
   align-items: center;
   justify-self: center;
   flex-direction: column;
-  margin-top: -230px;
 }
 
 @media screen and (max-width: 480px) {
@@ -104,3 +106,8 @@ input {
   bottom: 0;
   opacity: 0.5;
 }
+
+.conversion-table {
+  display: flex;
+}
+
